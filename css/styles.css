@@ -1,0 +1,325 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+      scroll-behavior: smooth;
+      background-color: #F5F5F5;
+    }
+
+body {
+     font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      height: 20px;
+      background-color:#A8C66C;
+      padding: 15px;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: #333333;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+
+
+/*Esta es la configuracion de la imagen inicial*/
+.inicio{
+  text-align: center;
+  font-size: 25px;
+  color: aliceblue;
+  width: 100%;
+  height: 100vh; /* Ajusta la altura al 100% de la ventana */
+  background-color: #2352ec;
+  background-image: url('../img/Cabecera.jpg'); /* Reemplaza con la URL de tu imagen */
+  background-size: cover; /* Ajusta la imagen al tamaño del div */
+  background-position: center; /* Centra la imagen */
+  border-bottom: 2px solid white;
+}
+/*Mensaje que esta dentro de la imagen*/
+#mensaje{
+  padding: 240px;
+  
+}
+
+/*Configuracion de los titulos*/
+.Titulos{
+  background-color: #F5F5F5;
+  color: #333333;
+  font-family: sans-serif;
+  font-size: 25px;
+  padding-top: 45px;
+  padding-left: 45px;
+  padding-bottom: 45px;
+}
+
+.Texto{
+  background-color: #F5F5F5;
+  color: #333333;
+  font-family: sans-serif;
+  text-align: justify;
+  font-size: 25px;
+  padding-right: 150px;
+  padding-left: 400px;
+  padding-bottom: 20px;
+  /*background: -webkit-linear-gradient(top, #d61313 50%, #994500 90%);*/
+  /*background: -webkit-radial-gradient(center, circle, #ffffff 0%, #006699 200%);*/
+}
+
+.Texto ul{
+  padding-left: 60px;
+}
+
+.Texto ul li{
+  padding-bottom: 10px;
+  
+}
+
+.Texto img{
+  width: 400px;
+  height: 600px;
+  margin-left: 200px;
+  margin-bottom: 20px;
+}
+
+/*Configuracion del div Contenedor*/
+.Contenedor{
+  background-color: #F5F5F5;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-family: sans-serif;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.Contenedor img{
+  
+  width: 500px; /* Ajusta el ancho de la imagen */
+  height: 500px; /* Ajusta la altura de la imagen */
+  border-radius: 20px; /* Bordes redondeados */
+  box-shadow: rgb(150, 150, 150) 5px 5px 10px inset; /* Sombra interna */
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.Columna1{
+  
+  background-color: #F5F5F5;
+  color: #333333;
+  width: 850px;
+  height: 400px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 20px;
+  font-family: sans-serif;
+  text-align: justify;
+  
+}
+.Columna{
+ 
+  /*border-radius: 40px 40px 40px 10px;  /* Bordes redondeados */
+  background-color: #F5F5F5;
+  color: #333333;
+  width: 850px;
+  height: 700px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 20px;
+  font-family: sans-serif;
+  text-align: justify;
+  padding-bottom: 10px;
+  
+
+}
+
+.Columna2{
+  
+  width: 500px;
+  height: 550px;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-family: sans-serif;
+  font-size: 20px;
+  background-color: #A7D8F0;
+  color: #333333;
+  border-radius: 10px 10px 10px 10px;
+  padding: 10px;
+}
+
+.Columna2 img{
+  
+  width: 350px;
+  height: 350px;
+  margin-top: 20px;
+  margin-left: 65px;
+  margin-bottom: 20px;
+}
+
+
+/*Configuracion de la historia de la energia solar*/
+.Historia{
+  margin-left: 45px;
+  background-color: #F5F5F5;
+}
+
+[data-component="slideshow"] .slide {
+  display: none;
+  color: #333333;
+  width: 1300px;
+  height: 400px; /* Ajusta la altura */
+  transition: opacity 0.5s ease-in-out; /* Animación de transición */
+  font-size: 20px;
+  background-color: #F5F5F5;
+  font-family: sans-serif;
+  text-align: justify;
+}
+.slide img{
+  width: 330px;
+  height: 200px;
+  padding-top: 20px;
+  padding-left: 600px;
+}
+
+.slide h1{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+[data-component="slideshow"] .slide.active {
+  display: block;
+}
+
+.BotonesHistoria{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.BotonesHistoria button{
+  background-color: #A7D8F0; /* Color de fondo amarallo */
+  border: none; /* Sin borde */
+  color: white; /* Color del texto blanco */
+  padding: 15px 32px; /* Espaciado interno */
+  text-align: center; /* Alineación del texto */
+  text-decoration: none; /* Sin subrayado */
+  display: inline-block; /* Permite aplicar márgenes y padding */
+  font-size: 16px; /* Tamaño de fuente */
+  margin: 4px 2px; /* Márgenes */
+  cursor: pointer; /* Cambia el cursor a mano */
+  border-radius: 8px; /* Bordes redondeados */
+}
+
+.BotonesHistoria button:hover{
+  background-color: #3e8e41; /* Cambia el color de fondo al pasar el cursor */
+}
+
+.BotonesHistoria button:active{
+  background-color: #2e6b2f; /* Cambia el color de fondo al hacer clic */
+  transform: translateY(1px); /* Efecto de hundimiento al hacer clic */
+}
+
+/*Codigo para que el circulo siga al cursor*/
+#circulo {
+  width: 30px;
+  height: 30px;
+  background-color: orange;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none; /* Permite que los eventos del mouse pasen a través del círculo */
+}
+
+/*Espacion para crear la division entre partes*/
+.Division {
+  background-image: url('../img/Division.jpg');
+  background-size: cover; /* Ajusta la imagen al contenedor */
+  opacity: 0.5; /* Ajusta el nivel de desvanecimiento */
+  width: 100%;
+  height: 300px; /* Ajusta la altura */
+  position: relative; /* Necesario para posicionar el contenido */
+}
+
+/*Espacio para configurar los videos de Youtube*/
+.VideoContainer {
+  position: relative;
+  margin-top: 10px;
+  margin-left: 400px;
+  margin-bottom: 10px;
+  width: 60%;
+  max-width: 60%;
+  aspect-ratio: 16/9;
+}
+
+.VideoContainer iframe {
+  position: absolute;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/*Espacio para calculadora solar*/
+.contenedor1 {
+  
+  color: #333333;
+  width: 600px;
+  margin-left: 400px;
+  background-color: #A7D8F0;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+}
+label {
+  display: block;
+  margin: 1rem 0;
+}
+button {
+  background-color: #FFD700;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/*Espacio para el pie de pagina*/
+.pie{
+  background-color: #A7D8F0;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-family: sans-serif;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.Colpie{
+  
+  color: #333333;
+  width: 800px;
+  height: 300px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 20px;
+  font-family: sans-serif;
+  text-align: justify;
+}
+
+.Colpie div{
+  padding: 60px;
+  padding-left: 60px;
+}
